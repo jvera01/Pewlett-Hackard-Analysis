@@ -1,15 +1,5 @@
 # Pewlett-Hackard-Analysis
 
-    Deliverable 3 Requirements
-    Structure, Organization, and Formatting (6 points)
-    The written analysis has the following configuration, organization, and formatting:
-
-    There is a title, and there are multiple sections. (2 pt)
-    Each unit has a heading and subheading. (2 pt)
-    Links to images are working and displayed correctly. (2 pt)
-    Analysis (14 points)
-    The written analysis has the following:
-
 # Overview of the analysis:
    * Now that Bobby has proven his SQL chops, his manager has given both of you two more assignments: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. Then, you'll write a report that summarizes your analysis and helps prepare Bobby's manager for the "silver tsunami" as many current employees reach retirement age.
 # The purpose of the new analysis is well defined. (3 pt) Results:
@@ -39,7 +29,7 @@
 
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
     Pwelett Hackard will have a total of 90398 roles that will need to be filled. We have helped to identify that 17187 employees will be retiring within the first seven months. 
-     - Picture - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20add_queries_more_insight7.PNG
+     
      SELECT e.emp_no,
                 e.first_name,
                 e.last_name,
@@ -53,14 +43,14 @@
                 INNER JOIN salaries as s
                 ON (t.emp_no = s.emp_no)
             WHERE (e.birth_date BETWEEN '1952-01-01' AND '1952-07-31');
-
-            SELECT COUNT(emp_no)
+           
+     SELECT COUNT(emp_no)
             FROM add_queries_more_insight7;
-
+            Results - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20add_queries_more_insight7.PNG
+            
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-  When you query the count of Pwelett Hackerd mentorship eligibility, there are 1940 mentorship eligible employees. 
-        - Pitucre - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/Count%20mentorship%20elegibility.PNG   
-            SELECT COUNT(emp_no)
+  When we query the count of Pwelett Hackerd mentorship eligibility, there are 1940 mentorship eligible employees. 
+        SELECT COUNT(emp_no)
             FROM mentorship_eligibilty;
-
+            Results - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/Count%20mentorship%20elegibility.PNG   
 
