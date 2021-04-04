@@ -19,20 +19,27 @@
    In the Pwelett Hacker Analysis were able to identify the following major points. Attached I have included the a link to resutls in a picure and csv files. 
 
    *  We were able to Number of Retiring Employees by Title. 
-        
+      Picture:https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20retirement_titles.PNG
+      Data:https://raw.githubusercontent.com/jvera01/Pewlett-Hackard-Analysis/main/Pewlett-Hackard-Analysis%20Challenge/retirement_titles.csv  
+   
    *  We were able to identify the titles that will be retiring.
-
-   *  We were able to identify unique titles.
-
-   *  The Employees Eligible for the Mentorship Program.
-
-
+      Picture:https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20retiring_titles..PNG
+      https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/retiring_titles.csv
+  
+  *  We were able to identify unique titles.
+       Picture: https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20unique_titles..PNG
+       Data: https://raw.githubusercontent.com/jvera01/Pewlett-Hackard-Analysis/main/Pewlett-Hackard-Analysis%20Challenge/unique_titles.csv
+  
+  *  The Employees Eligible for the Mentorship Program.
+       Picture: https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20mentorship_elegibility..PNG   
+       Data: https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/mentorship_eligibilty.csv
+      
 
 # Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may offer more insight into the upcoming "silver tsunami."
 
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
     Pwelett Hackard will have a total of 90398 roles that will need to be filled. We have helped to identify that 17187 employees will be retiring within the first seven months. 
-     
+     - Picture - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/SELECT%20FROM%20add_queries_more_insight7.PNG
      SELECT e.emp_no,
                 e.first_name,
                 e.last_name,
@@ -52,9 +59,9 @@
 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
   When you query the count of Pwelett Hackerd mentorship eligibility, there are 1940 mentorship eligible employees. 
-            
-            
+        - Pitucre - https://github.com/jvera01/Pewlett-Hackard-Analysis/blob/main/Pewlett-Hackard-Analysis%20Challenge/Count%20mentorship%20elegibility.PNG   
             SELECT COUNT(emp_no)
             FROM mentorship_eligibilty;
+
 
 
